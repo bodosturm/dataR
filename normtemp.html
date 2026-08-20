@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Body temperature and heart rate of 130 health individuals</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="R%20%20Body%20temperature%20and%20heart%20rate%20of%20130%20health%20individuals-Dateien/R.css">
+</head><body>
+
+<table summary="page for normtemp {UsingR}" width="100%"><tbody><tr><td>normtemp {UsingR}</td><td style="text-align: right;">R Documentation</td></tr></tbody></table>
+
+<h2> Body temperature and heart rate of 130 health individuals</h2>
+
+<h3>Description</h3>
+
+<p>A data set used to investigate the claim that “normal” temperature is
+98.6 degrees. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(normtemp)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 130 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>temperature</dt><dd><p>normal body temperature</p>
+</dd>
+<dt>gender</dt><dd><p>Gender 1 = male, 2 = female</p>
+</dd>
+<dt>hr</dt><dd><p>Resting heart rate</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Is normal body temperature 98.6 degrees Fahrenheit? This dataset was
+constructed to match data presented in an are article intending to
+establish the true value of “normal” body temperature.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data set was contributed by Allen L. Shoemaker to the
+<em>Journal of Statistics Education</em>,
+<a href="http://www.amstat.org/publications/jse/datasets/normtemp.txt">http://www.amstat.org/publications/jse/datasets/normtemp.txt</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Data set is simulated from values contained in 
+Mackowiak, P. A., Wasserman, S. S., and Levine, M. M.  (1992), "A
+Critical Appraisal of 98.6 Degrees F, the Upper Limit of the Normal Body
+Temperature, and Other Legacies of Carl Reinhold August Wunderlich,"
+<em>Journal of the American Medical Association</em>, 268, 1578-1580.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>data(normtemp)
+hist(normtemp$temperature)
+t.test(normtemp$temperature,mu=98.2)
+summary(lm(temperature ~ factor(gender), normtemp))
+</pre>
+
+<hr><div style="text-align: center;">[Package <em>UsingR</em> version 2.0-5 <a href="http://127.0.0.1:16482/library/UsingR/html/00Index.html">Index</a>]</div>
+</body></html>

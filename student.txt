@@ -1,0 +1,12 @@
+Survey of students at the Faculty of Business Administration (2009-2013), 2nd semester
+fem                  female = 1, male = 0
+age                  age
+height               height in cm
+weight               weight in kg
+shoe                 EU shoe size
+sport                hours of exercises per week
+veg_fruits           portions of vegetables, fruits or juice per day
+income               monthly income in EUR
+food                 monthly expenditures for food
+organic              How often do you consume organic ("bio") foof?
+student_ohne_Ausr    Nur das Jahr 2009 und OHNE Ausreiﬂer

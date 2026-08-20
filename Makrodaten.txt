@@ -1,0 +1,21 @@
+Makrodaten.txt
+1. Jahr          Jahr
+2. PIL_D         Preisindex für Lebenshaltung alle privaten Haushalte, früheres Bundesgebiet, 1995 = 100, lange Reihen Destatis 
+3. IEH_D         Index der Einzelhandelspreise, 1995 = 100, lange Reihen Destatis
+4. VPI_D         Verbraucherpreisindex Deutschland, 2020 = 100, Destatis
+5. uBA_D         Arbeitslosenquote der BA für Deutschland in Prozent (Arbeitslosenquote d. abhängigen ziv. Erwerbspers.), BA
+6. u_D           Arbeitslosenquote nach ILO für Deutschland in Prozent (arithm. Mittel der Monatswerte), Destatis
+7. u_D_est       Arbeitslosenquote nach ILO für Deutschland in Prozent (arithm. Mittel der bereinigten Monatswerte), vor 2007 Schätzwerte, Destatis
+8. BIP_D         nominales BIP in Mrd. Euro für Deutschland, Destatis, Stand: 15.01.2025
+9. KI_Y_D        Kettenindex des realen BIP für Deutschland, Referenzjahr 2020, Destatis, Stand: 15.01.2025
+10. PCY_D        Germany GDP per capita, constant prices Purchasing power parity; 2017 international dollar, IMF World Economic Outlook
+11. PCY_US       US GDP per capita, constant prices Purchasing power parity; 2017 international dollar, IMF World Economic Outlook
+12. CPI_US       Consumer Price Index USA, US Bureau of Labor Statistics https://www.bls.gov/
+13. u_US         Arbeitslosenquote für die USA in Prozent, US Bureau of Labor Statistics https://www.bls.gov/
+14. gY_D         Germany real GDP growth rate, percent, IMF World Economic Outlook, 2024 is an estimate	
+15. gY_US        US real GDP growth rate, percent, IMF World Economic Outlook, 2024 is an estimate  
+16. BIP_US       US Gross Domestic Product, Nominal, Domestic Currency, IMF Data
+17. Defl_US      US Gross Domestic Product, Deflator, Base Year = 2010, IMF Data
+18. HVPI_Euro    HICP - annual data (average index and rate of change) [prc_hicp_aind__custom_15297732], Euro area - 19 countries  (2015-2022), Eurostat
+19. u_Euro       Harmonised Unemployment - Monthly Rates: Total: All Persons for the Euro Area (19 Countries) (LRHUTTTTEZA156N), FRED St. Luis
+20. Y_US         GDP (constant 2015 bn US$) - United States, data.worldbank.org

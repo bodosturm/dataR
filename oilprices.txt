@@ -1,0 +1,4 @@
+Source     World Bank Commodity Prices
+Oil        Crude oil prices 1960 - 2023
+US dollars per barrel
+$2020 (deflated using the Consumer Price Index for the US)		

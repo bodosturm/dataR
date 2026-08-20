@@ -1,0 +1,3 @@
+Source: https://data.giss.nasa.gov/gistemp/)
+GLOBAL: Land-Ocean Temperature Index in degrees Celsius, base period: 1951-1980. 
+Yr: Year

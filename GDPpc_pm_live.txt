@@ -1,0 +1,8 @@
+code: Country Code
+GDPpc: per-capita GDP in current USD
+pm: PM2.5 air pollution (mean annual exposure in micrograms per cubic meter)
+live: live expectancy at birth
+
+Source: Worldbank for the year 2019, https://data.worldbank.org/indicator
+only countries with complete observations for pm and live
+

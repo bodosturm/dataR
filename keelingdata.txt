@@ -1,0 +1,10 @@
+Konzentration von Kohlendioxid in ppm (parts per million)
+Quelle: NOAA (2014)
+http://www.esrl.noaa.gov/gmd/ccgg/trends/
+year                 Jahr
+month                Monat
+decimale.date        Jahr in Dezimalstellen (für die Abbildung verwenden!)
+observation          Beobachtung im jeweiligen Monat
+moving.average       Gleitender Durchschnitt/Trend
+
+

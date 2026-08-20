@@ -1,0 +1,12 @@
+Reference:        Albuquerque Board of Realtors 
+Authorization:    free use 
+Description: The data are a random sample of records of resales of homes from Feb 15 to Apr 30, 1993 from the files maintained by the Albuquerque Board of Realtors. This type of data is collected by multiple listing agencies in many cities and is used by realtors as an information base. 
+Number of cases: 117 
+1. PRICE       = Selling price ($hundreds) 
+2. SQFT        = Square feet of living space 
+3. AGE         = Age of home (years) 
+4. FEATS       = Number out of 11 features (dishwasher, refrigerator, microwave, disposer, washer, intercom, skylight(s), compactor, dryer, handicap fit, cable TV access 
+5. NE          = Located in northeast sector of city (1) or not (0) 
+6. CUST        = Custom built (Yes or No)
+7. COR         = Corner location (1) or not (0) 
+8. TAX         = Annual taxes ($) 
