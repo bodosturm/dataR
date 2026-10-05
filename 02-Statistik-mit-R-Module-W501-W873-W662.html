@@ -1623,7 +1623,7 @@ display: none;
 <h1 class="title toc-ignore">Statistik mit R für die Module W501, W873
 und W662 (Teil I)</h1>
 <h4 class="author">Bodo Sturm, HTWK Leipzig</h4>
-<h4 class="date">01.09.2026</h4>
+<h4 class="date">01.10.2026</h4>
 
 </div>
 
@@ -1746,12 +1746,11 @@ B. (2019): “Statistik. Eine Einführung mit R”, GUC-Verlag, 2. Auflage
 <li>Skript (dieses pdf/html).</li>
 <li>Aufgabenblätter zum selbstständigen Lösen (pro Kapitel ein
 Blatt).</li>
-<li>Datei “dataR.zip”. Diese Datei bitte <strong>LOKAL abspeichern und
-extrahieren</strong> (d.h., in einem Ordner auf Ihrem Rechner
-abspeichern und entpacken). Oder in einem Ordner auf Ihrem Rechner im
-Terminal den Befehl
-<code>git clone https://github.com/bodosturm/dataR.git</code> ausführen,
-dann wird der Inhalt von “dataR” in diesen Ordner kopiert.</li>
+<li>ZIP-Datei “dataR.zip”. Diese Datei bitte <strong>LOKAL abspeichern
+und extrahieren</strong> (d.h., in einem Ordner auf Ihrem Rechner
+abspeichern und entpacken). Oder Sie gehen direkt auf GitHub mit
+<code>https://github.com/bodosturm/dataR.git</code>, dann auf Code und
+auf Download ZIP. Anschließend lokal extrahieren.</li>
 <li>Sessionplan: In diesem txt file sind stichpunktartig die wichtigsten
 Inhalte aufgelistet.</li>
 <li>R Exkurse: Ein Ordner mit txt files, die verschiedene statistische
@@ -1994,10 +1993,10 @@ csv-Dateien lassen sich leicht aus Excel generieren (und dann als csv
 abspeichern).</p>
 <p>Option 1: Einlesen einer csv-Datei direkt von <strong>GitHub</strong>
 (Internet-Verbindung nötig) mit</p>
-<p><code>https://raw.githubusercontent.com/bodosturm/QMmitR/main/dateiname.csv</code></p>
+<p><code>https://raw.githubusercontent.com/bodosturm/dataR/main/dateiname.csv</code></p>
 <p>in Anführungszeichen und mit <code>read.csv()</code>.</p>
 <pre class="r"><code># Ein Beispiel:
-data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/patients.csv&quot;)
+data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/patients.csv&quot;)
 data                                     # Ausgabe des Objektes data</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2005,7 +2004,7 @@ data                                     # Ausgabe des Objektes data</code></pre
   </script>
 </div>
 <p>Option 2: Einlesen der csv-Datei aus einem Ordner auf Ihrem Rechner
-(Annahme: Alle Dateien aus QMmitR.zip liegen extrahiert in diesem
+(Annahme: Alle Dateien aus dataR.zip liegen extrahiert in diesem
 Ordner). Hierbei sind die folgenden Schritte zu absolvieren:</p>
 <ol style="list-style-type: lower-alpha">
 <li>Wo ist das aktuelle <strong>Arbeitsverzeichnis</strong>? Der Befehl
@@ -2026,7 +2025,7 @@ Anführungszeichen und mit <code>/</code> und nicht mit
 <code>Objektname &lt;- read.csv(&quot;Datei.csv&quot;)</code></li>
 </ol>
 <pre class="r"><code># Das Beispiel oben (hier auskommentiert):
-# setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+# setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)    # setze das Arbeitsverzeichnis
 # data &lt;- read.csv(&quot;patients.csv&quot;)         # Einlesen der Datei, Objektdefinition
 # data                                     # Ausgabe des Objektes data</code></pre>
 <p>Der Befehl <code>read.csv()</code> ist nur ein Einlesebefehl. R gibt
@@ -2216,9 +2215,9 @@ bedingte Auswertungen oder Matrixangaben genutzt, z.B. bei
 und mit einer Häufigkeitstabelle ausgegeben. In der Häufigkeitstabelle
 wird dann für jede Merkmalsausprägung <span class="math inline">\(i\)</span> der Wert <span class="math inline">\(n_i\)</span> angegeben. Es gilt <span class="math inline">\(\sum_{i=1}^{m}n_i=n\)</span>.</p>
 <p>Betrachten wir das folgende Beispiel:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # Definiere das Arbeitsverz.
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)    # Definiere das Arbeitsverz.
 data &lt;- read.csv(&quot;profession.csv&quot;)       # Einlesen der Datei
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/profession.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/profession.csv&quot;)
 data[1:3,]                               # Ausgabe Zeile 1 bis 3, alle Spalten</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2430,9 +2429,9 @@ rechtssteil)</li>
 <li>Ausreißer (auffällige Beobachtungen)</li>
 </ul>
 <p>Betrachten wir ein Beispiel:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 s.data &lt;- read.csv(&quot;student.csv&quot;)
-# s.data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/student.csv&quot;)
+# s.data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/student.csv&quot;)
 s.data[1:2, 1:8]; dim(s.data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2551,9 +2550,9 @@ Beobachtungen von <span class="math inline">\(X\)</span> größer als -1.
 Die Verteilungsfunktion wird häufig dann benutzt, wenn man mehrere
 Verteilungen vergleichen möchte.</p>
 <p>Betrachten wir ein Beispiel.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)        # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)        # setze das Arbeitsverzeichnis
 s.data &lt;- read.csv(&quot;student.csv&quot;)
-# s.data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/student.csv&quot;)
+# s.data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/student.csv&quot;)
 plot.ecdf(s.data$height[s.data$fem == 1], col = &quot;red&quot;, xlab = &quot;Größe in cm&quot;) # Frau = rot
 F_weight_male &lt;- ecdf(s.data$height[s.data$fem == 0])               # F für Mann
 lines(F_weight_male, col = &quot;blue&quot;)            # plot F für Männer = blau
@@ -2870,9 +2869,9 @@ nominal skaliert sind.</li>
 <p>In einem ersten Schritt der Analyse sollte die gemeinsame Verteilung
 zweidimensionaler quantitativer Daten, hier die Variablen <span class="math inline">\(X\)</span> und <span class="math inline">\(Y\)</span>, immer graphisch dargestellt werden.
 Hierfür nutzt man ein Streudiagramm. Betrachten wir ein Beispiel:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 s.data &lt;- read.csv(&quot;student.csv&quot;)
-# s.data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/student.csv&quot;)
+# s.data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/student.csv&quot;)
 s.data[1:2, 1:8]  # zeige einen Ausschnitt der Tabelle</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -3119,9 +3118,9 @@ Merkmale voneinander abhängig sind.</p>
 <p>Eine Kontingenztabelle stellt die gemeinsame Verteilung von zwei
 nominal skalierten Merkmalen dar.</p>
 <p>Betrachten wir hierzu ein Beispiel:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._2.1.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._2.1.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._2.1.csv&quot;)
 attach(data)
 addmargins(table(Journal, Gender))</code></pre>
 <pre><code>##                     Gender
@@ -3264,9 +3263,9 @@ legend(10, 1400000, lty = c(1,2), c(&quot;20*x^2 - 0.1*x^3&quot;, &quot;40*x^2 -
 <p><img role="img" aria-label src="data:image/png;base64,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" alt width="672" /></p>
 <p>Ein weiteres Beispiel, welches die Entwicklung des Ölpreises
 zeigt.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;oilprices.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/oilprices.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/oilprices.csv&quot;)
 data[1:2, ]; attach(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -3347,9 +3346,9 @@ gilt</p>
 <p>Wir betrachten das folgende Beispiel mit den Variablen
 <code>totalcost</code> und <code>output</code>. Der Output wird in
 Mengeneinheiten (ME) angegeben, die Gesamtkosten in 1000 Euro.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._5.2.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._5.2.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._5.2.csv&quot;)
 attach(data); data[1:2, ] </code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -3538,9 +3537,9 @@ unabhängige Variable <code>output</code> kann 55% der Streuung von
 <h4>Beispiel II</h4>
 <p>Wir betrachten das folgende Beispiel mit den Variablen <code>P</code>
 und <code>Q</code>:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Elasticity.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Elasticity.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Elasticity.csv&quot;)
 data[1:2, ]; attach(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -3728,9 +3727,9 @@ col = c(&quot;black&quot;,&quot;red&quot;), cex = 0.8)</code></pre>
 </div>
 <div id="beispiel-iii" class="section level4">
 <h4>Beispiel III</h4>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;GDPpc_pm_live.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/GDPpc_pm_live.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/GDPpc_pm_live.csv&quot;)
 data[1:2, ]; attach(data); dim(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -3806,9 +3805,9 @@ ausgeben lassen.</p>
 <h4>Beispiel IV</h4>
 <p>Betrachten wir ein Beispiel für das log-linear Modell <span class="math inline">\(\widehat {log(y)} = \beta_0 +
 \beta_1x\)</span>.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._5.4.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._5.4.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._5.4.csv&quot;)
 data[1:2, ]; attach(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -5764,9 +5763,9 @@ Wahlberechtigte nach Geschlecht und Wahlpräferenz befragt. Die Daten
 liegen in <code>Bsp._11.7.csv</code> vor. Es stellt sich die Frage, ob
 das Geschlecht einen Effekt auf die Wahlpräferenz hat. Das
 Signifikanzniveau sei 0.05.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._11.7.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._11.7.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._11.7.csv&quot;)
 data[1:2,]; attach(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -5938,9 +5937,9 @@ unbekanntem <span class="math inline">\(\sigma\)</span>.</p>
 t_{n-1[1-\alpha/2]}\widehat{\sigma}_{\bar{X}}\)</span></p>
 <p>Betrachten wir zunächst das mittlere monatliche Einkommen von
 HTWK-Studierenden im Jahr 2009.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)     # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)     # setze das Arbeitsverzeichnis
 stud.data_oA &lt;- read.csv(&quot;student_ohne_Ausr.csv&quot;) # bereinigter Datensatz, nur 2009
-# stud.data_oA &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/student_ohne_Ausr.csv&quot;)
+# stud.data_oA &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/student_ohne_Ausr.csv&quot;)
 attach(stud.data_oA); stud.data_oA[1:3, ]</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -6474,9 +6473,9 @@ andere Nutzer dagegen nicht. Frage: Haben Bonus-Punkte einen
 umsatzsteigernden Effekt? Es gibt 45+45=90 Beobachtungen (große
 Stichprobe) für die Veränderungen der Ausgaben innerhalb von 6
 Monaten.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._11.1.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._11.1.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._11.1.csv&quot;)
 attach(data); data[1:2, ] # B = Bonus, kB = kein Bonus</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -6637,7 +6636,7 @@ beträgt 0.992 Standardabweichungen (also ca. 1 SD). Der Effekt ist also
 sowohl ökonomisch (&lt;=&gt; Effektgröße) als auch statistisch (p-value
 &lt; 0.05) signifikant.</p>
 <p>Ein Beispiel für den Zweistichproben-t-Test (vgl. oben):</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._11.1.csv&quot;)
 head(data, 2)</code></pre>
 <div data-pagedtable="false">
@@ -7007,9 +7006,9 @@ t_{df[1-\alpha/2]}SE(\widehat{\beta}_1)\)</span></p>
 <p>Betrachten wir Bsp. 5.2 aus dem Lehrbuch (S. 91, 279). Wir
 unterstellen, dass die Beobachtungen zufällig aus einer großen
 Grundgesamtheit gezogen wurden.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._5.2.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._5.2.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._5.2.csv&quot;)
 data[1:2, ]; attach(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -7172,9 +7171,9 @@ shapiro.test(ols$residuals)    </code></pre>
 ## W = 0.95, p-value = 0.43</code></pre>
 <p>Für die weitere Diagnose vgl. Kapitel “Multiple Regression”.</p>
 <p>Betrachten wir ein weiteres Beispiel.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;wage1.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/wage1.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/wage1.csv&quot;)
 names(data)[1:7]; attach(data)</code></pre>
 <pre><code>## [1] &quot;wage&quot;     &quot;educ&quot;     &quot;exper&quot;    &quot;tenure&quot;   &quot;nonwhite&quot; &quot;female&quot;   &quot;married&quot;</code></pre>
 <pre class="r"><code>summary(wage); summary(educ) </code></pre>
@@ -7420,9 +7419,9 @@ zusätzliches Jahr Bildung. Die Abweichungen zum Modell ergeben sich u.a.
 dadurch, dass wir runden und einen stetigen Zusammenhang diskret (+1
 Jahr) interpretieren.</p>
 <p>Wir betrachten nun das folgende Beispiel:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;GDPpc_pm_live.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/GDPpc_pm_live.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/GDPpc_pm_live.csv&quot;)
 data[1:2, ]; attach(data); dim(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -7505,9 +7504,9 @@ ausgeben lassen.</p>
 <pre><code>## [1] 40.448</code></pre>
 <p>Wir betrachten abschließend das folgende Beispiel mit den Variablen
 <span class="math inline">\(P\)</span> und <span class="math inline">\(Q\)</span>:</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Elasticity.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Elasticity.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Elasticity.csv&quot;)
 data[1:2, ]; attach(data)</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -7674,9 +7673,9 @@ in der Summe der Varianzen (unter der Quadratwurzel) noch die Varianz
 der Residuen (<span class="math inline">\(\widehat \sigma_e^2\)</span>)
 hinzuaddiert wird.</p>
 <p>Betrachten wir Bsp. 5.2 aus dem Lehrbuch.</p>
-<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/QMmitR&quot;)   # setze das Arbeitsverzeichnis
+<pre class="r"><code>setwd(&quot;C:/Users/sturm/Desktop/dataR&quot;)   # setze das Arbeitsverzeichnis
 data &lt;- read.csv(&quot;Bsp._5.2.csv&quot;)
-# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/QMmitR/main/Bsp._5.2.csv&quot;)
+# data &lt;- read.csv(&quot;https://raw.githubusercontent.com/bodosturm/dataR/main/Bsp._5.2.csv&quot;)
 attach(data); names(data)</code></pre>
 <pre><code>## [1] &quot;output&quot;    &quot;totalcost&quot;</code></pre>
 <pre class="r"><code>ols &lt;- lm(totalcost ~ output)</code></pre>
